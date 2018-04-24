@@ -15,3 +15,9 @@ WIN_COMBINATIONS = [
                       [2,4,6]  #r>l diag 
                     ]
 
+def won?(board)
+  WIN_COMBINATIONS.each do |combo|
+    combo.each do |i|
+      if board[i]
+  # review items at the index to see if they are all the same 
+end
