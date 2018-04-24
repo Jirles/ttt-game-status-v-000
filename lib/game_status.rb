@@ -21,8 +21,7 @@ def won?(board)
       if board[combo[0]] == board[combo[1]] && board[combo[0]] == board[combo[2]]
         return combo 
       end
-    else
-      false 
     end
   end
+  false
 end
