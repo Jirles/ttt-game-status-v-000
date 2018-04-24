@@ -24,3 +24,7 @@ def won?(board)
   end
   won
 end
+
+def full?(board)
+  board.any?{|
+end
