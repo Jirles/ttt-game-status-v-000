@@ -25,10 +25,16 @@ def won?(board)
   won
 end
 
+
 def full?(board)
   board.all?{|space| space == "X" || space == "O"}
 end
 
+
 def draw?(board)
   !won?(board) && full?(board)
+end
+
+def over?(board)
+  won?(board) || draw?(board)
 end
