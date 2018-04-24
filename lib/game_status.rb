@@ -14,3 +14,4 @@ WIN_COMBINATIONS = [
                       [0,4,8], #l>r diag 
                       [2,4,6]  #r>l diag 
                     ]
+
