@@ -18,7 +18,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     #test if all spaces are filled (true)
-    position_taken?(board, index)
+    test = []
+    combo.each {|i| position_taken?(board, index) << test}
     char_1 = board[combo[0]]
     char_2 = board[combo[1]]
     char_3 = board[combo[2]]
