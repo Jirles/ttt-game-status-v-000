@@ -17,12 +17,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    #test if all spaces are filled (true)
     if combo.all? {|i| position_taken?(board, i)}
-      char_1 = board[combo[0]]
-      char_2 = board[combo[1]]
-      char_3 = board[combo[2]]
-      if char_1 == char_2 && char_1 == char_3
+      if board[combo[0]] == board[combo[1]] && board[combo[0]] == board[combo[2]]
         return combo 
       end
     else
