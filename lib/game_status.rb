@@ -17,7 +17,13 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    combo.each do |i|
-      if board[i]
-  # review items at the index to see if they are all the same 
+    char_1 = board[combo[0]]
+    char_2 = board[combo[1]]
+    char_3 = board[combo[2]]
+    if char_1 == char_2 && position_1 = position_3
+      return combo 
+    else
+      false 
+    end
+  end
 end
