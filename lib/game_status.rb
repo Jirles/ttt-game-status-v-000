@@ -17,14 +17,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    if combo.all?{|i| position_taken?(board, i)}
-      if board[combo[0]] == board[combo[1]] && board[combo[0]] == board[combo[2]]
+    if (combo.all?{|i| position_taken?(board, i)}) && (board[combo[0]] == board[combo[1]] && board[combo[0]] == board[combo[2]]) 
         combo
-      else
-        false
-      end
     else
-      false
+        false
     end
   end
 end
